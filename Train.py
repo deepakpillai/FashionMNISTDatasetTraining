@@ -29,7 +29,7 @@ class Train():
 
                 if batch_number % 400 == 0:
                     print(f"Looked through {batch_number} batches")
-                    print(f"Average training loss {total_training_loss / len(testing_data)}")
+                    print(f"Average training loss {total_training_loss / len(training_data)}")
                     print(f"Accuracy score {accuracy_score(pred, labels)}")
 
             for test_batch_number, (test_features, test_labels) in enumerate(testing_data):
